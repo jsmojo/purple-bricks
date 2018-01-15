@@ -1,0 +1,40 @@
+.BuyersDetail {
+
+    margin-bottom: 30px;
+    .toggleBtn {
+        cursor: pointer;
+        text-align: right;
+        float: right;
+        font-size: .6em;
+        position: relative;
+        top: 8px;
+        color: $flirt;
+        
+        .glyphicon {
+            padding-left: 10px;
+        }
+    }
+    .topic {
+        color: $ripe-plum;
+        display: inline-block;
+        width: 145px;
+    }
+    .topic-detail {
+        display: inline-block;
+    }
+    .topic-container {
+        padding: 3px 0;
+        font-size: 1.1em;
+    }
+
+    .pbPanel-body {
+        overflow: hidden;
+        
+
+        &.active {
+            height: 0;
+            padding: 0;
+            border-top: none;
+        }
+    }
+}

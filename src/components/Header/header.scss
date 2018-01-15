@@ -1,0 +1,43 @@
+
+.header {
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    height: $header-height;
+    -moz-box-shadow:    0 2px 5px 0px #ccc;
+    -webkit-box-shadow: 0 2px 5px 0px #ccc;
+    box-shadow: 0 2px 5px 0px #ccc;
+
+    .header-inner {
+        width: 100%;
+        margin: 0 auto;
+        @include clearfix;
+
+        .logo {
+            float: left;
+            position: relative;
+            top: 10px;
+        }
+        .pageTitle {
+            float: right;
+            color: $ripe-plum;
+            position: relative;
+            top: 50px;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+    }
+    @media (min-width: $screen-sm-min) {
+    }
+    @media (min-width: $screen-md-min) {
+        .header-inner {
+            .pageTitle {
+                font-size: 1.85em;
+            }
+        }
+    }
+    @media (min-width: $screen-lg-min) {
+        .header-inner {
+            width: $content-width;
+        }
+    }
+}

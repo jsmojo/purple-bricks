@@ -1,0 +1,34 @@
+.YourResponse {
+
+    margin-bottom: 30px;
+    
+    .content {
+        .message {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: $crimson;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            width: 45%;
+        }
+        .dateInfo {
+            font-size: .8em;
+            color: $ripe-plum;
+            display: inline-block;
+            width: 55%;
+            text-align: right;
+        }
+    }
+
+    @media (min-width: $screen-sm-min) {
+
+    }
+    @media (min-width: $screen-md-min) {
+        
+    }
+    @media(min-width: $screen-lg-min) {
+        
+    }
+}

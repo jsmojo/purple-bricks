@@ -1,0 +1,38 @@
+.BuyersOffer {
+
+    margin-bottom: 30px;
+    
+    .offer {
+        .price {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .note {
+            font-size: .8em;
+            margin-bottom: 15px;
+            color: $tundora;
+        }
+        .btn {
+            display: inline-block;
+            width: 45%;
+        }
+        .dateInfo {
+            font-size: .8em;
+            color: $ripe-plum;
+            display: inline-block;
+            width: 55%;
+            text-align: right;
+        }
+    }
+
+    @media (min-width: $screen-sm-min) {
+
+    }
+    @media (min-width: $screen-md-min) {
+        
+    }
+    @media(min-width: $screen-lg-min) {
+        
+    }
+}

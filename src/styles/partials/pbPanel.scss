@@ -1,0 +1,31 @@
+.pbPanel {
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid $silver-chalice;
+
+    .pbPanel-heading {
+        .title {
+            font-weight: bold;
+            font-size: 1.9em;
+            padding: 15px 0 5px;
+            color: $ripe-plum;
+        }
+    }
+    .pbPanel-body {
+        border-top: 1px solid #acacac;
+        padding: 20px 0;
+    }
+
+    &.pbPanel-blue {
+        border-color: $ripe-plum;
+        color: $ripe-plum;
+    }
+
+    &.pbPanel-important {
+        border-color: $crimson;
+        background-color: $mercury;
+        .title {
+            color: $crimson;
+        }
+    }
+}

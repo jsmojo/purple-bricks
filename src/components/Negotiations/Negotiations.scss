@@ -1,0 +1,92 @@
+.Negotiations {
+
+    margin-bottom: 30px;
+    
+    .callExpert {
+        padding: 20px 25px;
+        border: 1px solid $silver-chalice;
+
+        .message {
+            
+            color: $ripe-plum;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding-right: 10px;
+        }
+        .btnContainer {
+            display: block;
+            margin-top: 15px;
+        }
+    }
+    .enterOffer {
+        margin-top: 25px;
+        .title {
+            color: $ripe-plum;
+            font-weight: bold;
+            font-size: 1.4em;
+            margin-left: 25px;
+            margin-bottom: 5px;
+        }
+        .currencyContainer {
+            position: relative;
+            display: inline-block;
+            width: 60%;
+
+            .currency {
+                color: $silver-chalice;
+                font-size: 2em;
+                font-weight: bold;
+                position: absolute;
+                top: -2px;
+            }
+
+            .form-control {
+                margin-left: 25px;
+                margin-bottom: 20px;
+                width: 250px;
+            }
+            .btn {
+                margin-left: 25px;
+            }
+        }
+        .submitContainer {
+            display: inline-block;
+            width: 40%;
+            vertical-align: top;
+            text-align: right;
+
+            .errorMessage {
+                color: $crimson;
+                display: inline-block;
+                font-weight: bold;
+                height: 20px;
+            }
+            button {
+                float: right;
+                font-size: 1.4em;
+            }
+        }
+    }
+    @media (min-width: $screen-sm-min) {
+
+    }
+    @media (min-width: $screen-md-min) {
+        .callExpert {
+            .message { 
+                display: inline-block;
+                width: 60%;
+            }
+            .btnContainer {
+                display: inline-block;
+                width: 40%;
+                vertical-align: top;
+                .btn {
+                    float: right;
+                }
+            }
+        }
+    }
+    @media(min-width: $screen-lg-min) {
+        
+    }
+}

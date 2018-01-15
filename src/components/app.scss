@@ -1,0 +1,29 @@
+
+.body {
+    font-size: 14px;
+}
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 480px;
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+.mainContent {
+    margin: 40px auto;
+    @media (min-width: $screen-sm-min) {
+    }
+    @media (min-width: $screen-md-min) {
+    }
+    @media (min-width: $screen-lg-min) {
+        width: 930px;
+    }
+}

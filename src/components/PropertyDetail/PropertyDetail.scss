@@ -1,0 +1,51 @@
+.PropertyDetail {
+
+    margin-bottom: 30px;
+    
+    .addressInfo {
+        position: relative;
+
+        .street {
+            font-weight: bold;
+            display: inline-block;
+            position: absolute;
+            left: 140px;
+            font-size: 1.3em;
+        }
+    }
+    .priceInfo {
+        margin-top: 20px;
+        border-top: 1px solid $silver-chalice;
+        padding-top: 20px;
+
+        .title {
+            color: $tundora;
+        }
+        .price {
+            font-weight: bold;
+            font-size: 1.8em;
+            margin: 2px 0;
+        }
+    }
+
+    @media (min-width: $screen-sm-min) {
+
+    }
+    @media (min-width: $screen-md-min) {
+        .addressInfo {
+            display: inline-block;
+            width: 60%;
+        }
+        .priceInfo {
+            display: inline-block;
+            width: 40%;
+            text-align: right;
+            margin-top: 0;
+            border-top: none;
+            padding-top: 0;
+        }
+    }
+    @media(min-width: $screen-lg-min) {
+        
+    }
+}
