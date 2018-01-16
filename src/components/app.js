@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header/header';
+import NotificationFeed from './NotificationFeed/NotificationFeed';
 import PropertyDetail from './PropertyDetail/PropertyDetail';
 import BuyersDetail from './BuyersDetail/BuyersDetail';
 import BuyersOffer from './BuyersOffer/BuyersOffer';
@@ -16,6 +17,9 @@ class App extends React.Component {
                     </div>
                 </div>
                 <div className="mainContent row">
+                    <div className="col-xs-12">
+                        <NotificationFeed />
+                    </div>
                     <div className="col-xs-12">
                         <PropertyDetail />
                     </div>
