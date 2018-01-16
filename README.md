@@ -12,6 +12,10 @@ $ cd purple-bricks
 $ npm install 
 ```
 
+```
+For Windows:
+$ npm rebuild node-sass --force 
+```
 
 ```
 $ npm start -s
