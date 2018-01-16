@@ -17,4 +17,4 @@ $ npm install
 $ npm start -s
 ```
 
-![alt tag](https://github.com/jsmojo/purple-bricks/src/images/demo.jpg)
+![alt tag](https://github.com/jsmojo/purple-bricks/blob/master/src/images/demo.jpg)
