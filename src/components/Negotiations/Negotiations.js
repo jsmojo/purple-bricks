@@ -29,6 +29,7 @@ class Negotiations extends React.Component {
         } 
     }
     handleChange(e) {
+        this.setState({showError: ''});
         let displayOffer = '';
         let numbers = '0123456789';
         let offer = e.target.value;
