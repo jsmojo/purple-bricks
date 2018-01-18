@@ -13,12 +13,7 @@ $ npm install
 ```
 
 ```
-For Windows:
-$ npm rebuild node-sass --force 
-```
-
-```
-$ npm start -s
+$ npm start 
 ```
 
 ![alt tag](https://github.com/jsmojo/purple-bricks/blob/master/src/images/demo.jpg)

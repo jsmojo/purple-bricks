@@ -11,7 +11,6 @@ class Negotiations extends React.Component {
             showError: ''
         };
     
-        // This binding is necessary to make `this` work in the callback
         this.onSubmit = this.onSubmit.bind(this);
     }
 
