@@ -21,10 +21,6 @@ export default {
   devServer: {
     contentBase: path.resolve(__dirname, 'src')
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
-  ],
   module: {
     loaders: [
       {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel']},

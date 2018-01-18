@@ -2,6 +2,7 @@
   "name": "purple-bricks",
   "version": "1.0.0",
   "scripts": {
+    "postinstall" : "npm rebuild node-sass --force ",
     "prestart": "babel-node tools/startMessage.js",
     "start": "babel-node tools/srcServer.js"
   },
