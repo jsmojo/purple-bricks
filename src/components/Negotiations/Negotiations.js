@@ -7,21 +7,25 @@ class Negotiations extends React.Component {
         this.handleChange = this.handleChange.bind(this);
         this.state = {
             offerAmount: '',
-            offers: [],
+            offerInfo: {
+                name: 'Mr. David Shepherd',
+                property: 'Eddington House, 16 Wigginton Road, Tamworth, B79 8PB',
+                offer: ''
+            },
             showError: ''
         };
     
         this.onSubmit = this.onSubmit.bind(this);
     }
-
+    
     
     onSubmit(e) {
         e.preventDefault();
         if(this.state.offerAmount.length > 0) {
             this.setState({showError: ''});
-            this.state.offers.push(this.state.offerAmount);
+            this.state.offerInfo.offer = this.state.offerAmount;
             this.setState({offerAmount: ''});
-            console.log(this.state.offers);
+            console.log(this.state.offerInfo);
         }
         else {
             this.setState({showError: 'Please enter an offer amount.'});
@@ -39,10 +43,8 @@ class Negotiations extends React.Component {
             }
         }
           
-        //offer = Math.trunc( offer )
         displayOffer = displayOffer.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
-        //console.log(displayOffer, " : " , offer);
         this.setState({offerAmount: displayOffer});
     }
     render() {
