@@ -1,3 +1,5 @@
+@import '../../styles/modules/modules.scss';
+
 .Negotiations {
 
     margin-bottom: 30px;
@@ -27,10 +29,17 @@
             margin-left: 25px;
             margin-bottom: 5px;
         }
+        .errorMessage {
+            color: $crimson;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.1em;
+            height: 20px;
+            margin-left: 25px;
+        }
         .currencyContainer {
             position: relative;
-            display: inline-block;
-            width: 60%;
+            padding-left: 20px;
 
             .currency {
                 color: $silver-chalice;
@@ -38,37 +47,28 @@
                 font-weight: bold;
                 position: absolute;
                 top: -2px;
+                left: 0;
             }
 
             .form-control {
-                margin-left: 25px;
-                margin-bottom: 20px;
-                width: 250px;
+                width: 100%;
+                margin: 10px 0 15px;
             }
             .btn {
-                margin-left: 25px;
+                width: 100%;
             }
         }
         .submitContainer {
-            display: inline-block;
-            width: 40%;
             vertical-align: top;
-            text-align: right;
+            widows: 100%;
 
-            .errorMessage {
-                color: $crimson;
-                display: inline-block;
-                font-weight: bold;
-                height: 20px;
-            }
+            
             button {
-                float: right;
                 font-size: 1.4em;
+                width: 100%;
+                margin-top: 20px;
             }
         }
-    }
-    @media (min-width: $screen-sm-min) {
-
     }
     @media (min-width: $screen-md-min) {
         .callExpert {
@@ -80,13 +80,44 @@
                 display: inline-block;
                 width: 40%;
                 vertical-align: top;
+                text-align: right;
+
                 .btn {
                     float: right;
+                    width: auto;
                 }
             }
         }
-    }
-    @media(min-width: $screen-lg-min) {
+        .enterOffer {
+            .currencyContainer {
+                display: inline-block;
+                width: 60%;
+                .currency {
+                    top: 5px;
+                }
+                .form-control {
+                    //margin-left: 25px;
+                    margin-bottom: 20px;
+                    width: 250px;
+                }
+                .btn {
+                    //margin-left: 25px;
+                    width: auto;
+                }
+            }
+            .submitContainer {
+                width: 40%;
+                display: inline-block;
+                text-align: right;
+                button {
+                    float: right;
+                    font-size: 1.4em;
+                    width: auto;
+                    margin-top: 0;
+                }
+            }
+        }
         
     }
+
 }

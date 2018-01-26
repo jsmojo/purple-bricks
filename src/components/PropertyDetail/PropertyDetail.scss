@@ -1,3 +1,5 @@
+@import '../../styles/modules/modules.scss';
+
 .PropertyDetail {
 
     margin-bottom: 30px;
@@ -7,11 +9,9 @@
         vertical-align: top;
 
         .street {
+            margin-top: 15px;
             font-weight: bold;
-            display: inline-block;
-            position: absolute;
-            left: 140px;
-            font-size: 1.3em;
+            font-size: 1em;
         }
     }
     .priceInfo {
@@ -28,9 +28,16 @@
             margin: 2px 0;
         }
     }
-
     @media (min-width: $screen-sm-min) {
-
+        .addressInfo {
+            .street {
+                display: inline-block;
+                position: absolute;
+                margin-top: 0;
+                left: 140px;
+                font-size: 1.3em;
+            }
+        }
     }
     @media (min-width: $screen-md-min) {
         .addressInfo {
@@ -46,7 +53,5 @@
             padding-top: 0;
         }
     }
-    @media(min-width: $screen-lg-min) {
-        
-    }
+
 }

@@ -1,5 +1,10 @@
+body {
+    color: blue;
+}
 
 @import './modules/modules.scss';
+
+
 
 //Partials
 @import './partials/pbPanel.scss';

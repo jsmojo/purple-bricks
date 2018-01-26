@@ -1,3 +1,5 @@
+@import '../../styles/modules/modules.scss';
+
 .YourResponse {
 
     margin-bottom: 30px;
@@ -10,25 +12,24 @@
             margin-bottom: 10px;
         }
         .btn {
-            display: inline-block;
-            width: 45%;
+            margin-bottom: 10px;
         }
         .dateInfo {
             font-size: .8em;
             color: $ripe-plum;
-            display: inline-block;
-            width: 55%;
-            text-align: right;
         }
     }
 
     @media (min-width: $screen-sm-min) {
-
-    }
-    @media (min-width: $screen-md-min) {
-        
-    }
-    @media(min-width: $screen-lg-min) {
-        
+        .btn {
+            display: inline-block;
+            width: 45%;
+            margin-bottom: 0;
+        }
+        .dateInfo {
+            width: 55%;
+            text-align: right;
+            display: inline-block;
+        }
     }
 }

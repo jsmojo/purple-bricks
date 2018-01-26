@@ -1,3 +1,5 @@
+@import '../modules/modules.scss';
+
 .pbPanel {
     padding-left: 40px;
     padding-right: 40px;
@@ -6,7 +8,7 @@
     .pbPanel-heading {
         .title {
             font-weight: bold;
-            font-size: 1.9em;
+            font-size: 1.4em;
             padding: 15px 0 5px;
             color: $ripe-plum;
         }
@@ -26,6 +28,13 @@
         background-color: $mercury;
         .title {
             color: $crimson;
+        }
+    }
+    @media (min-width: $screen-sm-min) {
+        .pbPanel-heading {
+            .title {
+                font-size: 1.9em;
+            }
         }
     }
 }

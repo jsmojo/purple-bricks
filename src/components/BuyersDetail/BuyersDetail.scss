@@ -1,3 +1,5 @@
+@import '../../styles/modules/modules.scss';
+
 .BuyersDetail {
 
     margin-bottom: 30px;
@@ -16,25 +18,37 @@
     }
     .topic {
         color: $ripe-plum;
-        display: inline-block;
-        width: 145px;
+        display: block;
+        //display: inline-block;
+        //width: 145px;
+        border-bottom: 1px solid $silver-chalice;
     }
     .topic-detail {
         display: inline-block;
+        margin-bottom: 10px;
     }
     .topic-container {
         padding: 3px 0;
         font-size: 1.1em;
     }
 
-    .pbPanel-body {
+    .toggle-body {
         overflow: hidden;
         
-
         &.active {
             height: 0;
             padding: 0;
             border-top: none;
+        }
+    }
+    @media (min-width: $screen-sm-min) {
+        .topic {
+            display: inline-block;
+            width: 145px;
+            border-bottom: none;
+        }
+        .topic-detail {
+            margin-bottom: 0;
         }
     }
 }
