@@ -7,7 +7,7 @@ import BuyersOffer from './BuyersOffer/BuyersOffer';
 import YourResponse from './YourResponse/YourResponse';
 import Negotiations from './Negotiations/Negotiations';
 
-import styles from './App.scss';
+import styles from './app.scss';
 
 class App extends Component {
   render() {
