@@ -1,8 +1,7 @@
 @import '../modules/modules.scss';
 
 .pbPanel {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 15px;
     border: 1px solid $silver-chalice;
 
     .pbPanel-heading {
@@ -31,6 +30,8 @@
         }
     }
     @media (min-width: $screen-sm-min) {
+        padding: 0 40px;
+
         .pbPanel-heading {
             .title {
                 font-size: 1.9em;
