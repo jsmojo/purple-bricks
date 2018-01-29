@@ -1,0 +1,64 @@
+@import '../../styles/modules/modules.scss';
+
+.pbPanel {
+    padding: 0 15px;
+    border: 1px solid $silver-chalice;
+    margin-bottom: 30px;
+    
+    .toggleBtn {
+        cursor: pointer;
+        text-align: right;
+        float: right;
+        font-size: .6em;
+        position: relative;
+        top: 8px;
+        color: $flirt;
+        
+        .glyphicon {
+            padding-left: 10px;
+        }
+    }
+    .toggle-body {
+        overflow: hidden;
+        
+        &.active {
+            height: 0;
+            padding: 0;
+            border-top: none;
+        }
+    }
+    .pbPanel-heading {
+        .title {
+            font-weight: bold;
+            font-size: 1.4em;
+            padding: 15px 0 5px;
+            color: $ripe-plum;
+        }
+    }
+    .pbPanel-body {
+        border-top: 1px solid #acacac;
+        padding: 20px 0;
+    }
+
+    &.pbPanel-blue {
+        border-color: $ripe-plum;
+        color: $ripe-plum;
+    }
+
+    &.pbPanel-important {
+        border-color: $crimson;
+        background-color: $mercury;
+        .title {
+            color: $crimson;
+        }
+    }
+    @media (min-width: $screen-sm-min) {
+        padding: 0 40px;
+
+        .pbPanel-heading {
+            .title {
+                font-size: 1.9em;
+            }
+        }
+    }
+}

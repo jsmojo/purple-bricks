@@ -6,6 +6,7 @@ import BuyersDetail from './BuyersDetail/BuyersDetail';
 import BuyersOffer from './BuyersOffer/BuyersOffer';
 import YourResponse from './YourResponse/YourResponse';
 import Negotiations from './Negotiations/Negotiations';
+import Panel from './Panel/Panel';
 
 import styles from './app.scss';
 
@@ -19,23 +20,24 @@ class App extends Component {
                     </div>
                 </div>
                 <div className={"row " + styles.mainContent}>
+                    
                     <div className="col-sm-12">
                         <NotificationFeed />
                     </div>
                     <div className="col-sm-12">
-                        <PropertyDetail />
+                        <Panel header="The Property" toggleBody={false} panelColor="pbPanel-blue" content={<PropertyDetail />} />
                     </div>
                     <div className="col-sm-12">
-                        <BuyersDetail />
+                        <Panel header="Buyer's details" toggleBody={true} panelColor="" content={<BuyersDetail />} />
                     </div>
                     <div className="col-sm-12 col-md-6">
-                        <BuyersOffer />
+                        <Panel header="Buyer's Offer" toggleBody={false} panelColor="" content={<BuyersOffer />} />
                     </div>
                     <div className="col-sm-12 col-md-6">
-                        <YourResponse />
+                        <Panel header="Your Response" toggleBody={false} panelColor="pbPanel-important" content={<YourResponse />} />
                     </div>
                     <div className="col-sm-12">
-                        <Negotiations />
+                        <Panel header="Re-open negotiations" toggleBody={false} panelColor="pbPanel-blue" content={<Negotiations />} />
                     </div>
                 </div>
             </div>   

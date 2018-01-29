@@ -1,7 +1,6 @@
 @import '../../styles/modules/modules.scss';
 
 .BuyersOffer {
-    margin-bottom: 30px;
     
     .offer {
         .price {
@@ -26,11 +25,11 @@
     @media (min-width: $screen-sm-min) {
         .btn {
             display: inline-block;
-            width: 45%;
+            width: 48%;
             margin-bottom: 0;
         }
         .dateInfo {
-            width: 55%;
+            width: 52%;
             text-align: right;
             display: inline-block;
         }

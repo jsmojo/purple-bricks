@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Negotiations.scss';
-import panels from '../../styles/partials/pbPanel.scss';
 import buttons from '../../styles/partials/buttons.scss';
 
 class Negotiations extends React.Component {
@@ -55,35 +54,30 @@ class Negotiations extends React.Component {
     render() {
         const offerAmount = this.state.offerAmount;
         return (
-        <div className={styles.Negotiations + " " + panels.pbPanel + " " + panels['pbPanel-blue']}>
-            <div className={panels['pbPanel-heading']}>
-                <div className={panels.title}>Re-open negotiations</div>
-            </div>
-            <div className={panels['pbPanel-body']}>
-                <div className={styles.callExpert}>
-                    <div className={styles.message}>Would you like your Expert, Robert White, to negotiate on your behalf? It's completely free!</div>
-                    <div className={styles.btnContainer}>
-                        <div className={"btn " + buttons['btn-pb'] + " " + buttons['pb-blue']}>NEGOTIATE FOR ME</div>
-                    </div>
+        <div className={styles.Negotiations}>
+            <div className={styles.callExpert}>
+                <div className={styles.message}>Would you like your Expert, Robert White, to negotiate on your behalf? It's completely free!</div>
+                <div className={styles.btnContainer}>
+                    <div className={"btn " + buttons['btn-pb'] + " " + buttons['pb-blue']}>NEGOTIATE FOR ME</div>
                 </div>
-                <div className={styles.enterOffer}>
-                    <div className={styles.title}>Enter an offer you would be willing to accept:</div>
-                    <div style={{display: this.state.showError ? 'block' : 'none' }}>
-                        <span className={styles.errorMessage}>{this.state.showError}</span>
-                    </div>
-                    <div className={styles.currencyContainer}>
-                        <span className={styles.currency}>$</span>
-                        <input  type="text" 
-                                pattern="[0-9]*"
-                                className={"form-control " + styles['form-control']} 
-                                value={offerAmount}
-                                onChange={this.handleChange} />
-                        <div className={"btn " + styles.btn + " " +  buttons['btn-pb'] + " " + buttons['pb-blue']}>ADD COMMENTS</div>
-                    </div>
-                    <div className={styles.submitContainer}>
-                        
-                        <button type="button" onClick={this.onSubmit} className={"btn "  + buttons['btn-pb'] + " " + buttons['pb-sky']}>SUBMIT OFFER</button>
-                    </div>
+            </div>
+            <div className={styles.enterOffer}>
+                <div className={styles.title}>Enter an offer you would be willing to accept:</div>
+                <div style={{display: this.state.showError ? 'block' : 'none' }}>
+                    <span className={styles.errorMessage}>{this.state.showError}</span>
+                </div>
+                <div className={styles.currencyContainer}>
+                    <span className={styles.currency}>$</span>
+                    <input  type="text" 
+                            pattern="[0-9]*"
+                            className={"form-control " + styles['form-control']} 
+                            value={offerAmount}
+                            onChange={this.handleChange} />
+                    <div className={"btn " + styles.btn + " " +  buttons['btn-pb'] + " " + buttons['pb-blue']}>ADD COMMENTS</div>
+                </div>
+                <div className={styles.submitContainer}>
+                    
+                    <button type="button" onClick={this.onSubmit} className={"btn "  + buttons['btn-pb'] + " " + buttons['pb-sky']}>SUBMIT OFFER</button>
                 </div>
             </div>
         </div>
