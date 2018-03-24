@@ -1,5 +1,5 @@
 {
-  "name": "purplebricks",
+  "name": "async-await",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -92,5 +92,18 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "description": "``` $ git clone https://github.com/jsmojo/purple-bricks/ ```",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsmojo/purple-bricks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsmojo/purple-bricks/issues"
+  },
+  "homepage": "https://github.com/jsmojo/purple-bricks#readme"
 }
